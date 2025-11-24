@@ -8,7 +8,7 @@ import remarkGfm from 'remark-gfm'; // <--- NEW IMPORT
 
 // Configuration for the Gemini API call
 // API KEY IS NOW INSERTED DIRECTLY
-const API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
+const API_KEY ="AIzaSyAjOeF221sSRhha9AmbCbmnpqxT9s_wqOI";
 const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent";
 
 // System instruction to guide the AI's persona
