@@ -16,32 +16,25 @@ export default function SmoothScrollProvider({
     let dynamicOffset = 0;
 
     if (headerElement) {
-      // Get the precise height and add a small buffer (e.g., 8px)
       dynamicOffset = headerElement.offsetHeight + 8;
     }
 
-    // Fallback offset (64px = 4rem, matching the CSS) if the header isn't found
     const finalOffset = dynamicOffset > 0 ? dynamicOffset : 64;
 
-    // 2. Initialize Lenis with updated valid options
+    // 2. Initialize Lenis (compatibility mode for your version)
     const lenis = new Lenis({
-      smoothWheel: true,
-      smoothTouch: true,
-      lerp: 0.1,
+      smooth: true,
       wheelMultiplier: 0.9,
-
-      // Keep your dynamic offset
-      offset: finalOffset,
+      touchMultiplier: 1.0,
+      // Lenis does NOT support "offset" in your version
     });
 
     function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
-
     requestAnimationFrame(raf);
 
-    // Cleanup function
     return () => {
       lenis.destroy();
     };
