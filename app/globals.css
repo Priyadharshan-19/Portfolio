@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+/* Base styles and the fix for the fixed header overlap */
+html,
+body {
+  /* This line applies the Tailwind base background color/text properties */
+  @apply bg-bg text-slate-100 scroll-smooth; 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+  
+  /* FIX: Adds padding to the top of the viewport for native anchor scrolling. */
+  scroll-padding-top: 4rem; 
+
+  /* 🚀 NEW: CSS Background Animation (Applied to the highest viewport level) */
+  background: linear-gradient(
+    270deg,
+    #020617, /* bg */
+    #030712, /* bg-alt */
+    #38BDF820, /* neon 12% opacity */
+    #60A5FA25, /* accent 15% opacity */
+    #030712, /* bg-alt */
+    #020617 /* bg */
+  );
+  
+  background-size: 400% 400%; 
+  animation: gradient-shift 30s ease infinite; 
+}
+
+/* 🚀 NEW: Animation Keyframes (Must be outside the html, body block) */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Lenis scroll control styles (Keep this existing code) */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Custom Styles */
+
+/* Glassmorphism background effect (Uses custom colors: bg, neon, accent) */
+.glass {
+  background: radial-gradient(circle at top left, rgba(59,130,246,0.14), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(56,189,248,0.18), transparent 60%),
+    rgba(15,23,42,0.86);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(148,163,184,0.28);
+  box-shadow: 0 18px 45px rgba(15,23,42,0.95);
+}
+
+/* Text gradient for titles (Uses custom colors: accent, neon) */
+.text-gradient {
+  background: linear-gradient(120deg, #60a5fa, #38bdf8, #a855f7);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.reveal-line {
+  overflow: hidden;
+}
