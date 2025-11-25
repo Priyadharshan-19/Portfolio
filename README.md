@@ -1,79 +1,124 @@
-👩‍💻 Priyadharshan M | AI-Powered Portfolio
+---
 
-This repository contains the source code for my personal portfolio website, built to showcase my expertise in Generative AI, IoT Edge Computing, and Full-Stack Development.
+# 👩‍💻 Priyadharshan M | AI-Powered Portfolio
 
-A standout feature of this portfolio is the integration of a context-aware AI Assistant that makes my projects, skills, and experience instantly searchable — acting as an interactive résumé.
+This is the official repository for my personal portfolio website, designed to showcase my expertise in **Generative AI**, **IoT Edge Computing**, and **Full-Stack Development**.
 
-✨ Key Features
-✅ Interactive AI Assistant (Core Feature)
+The highlight of this portfolio is the integration of a **custom, context-aware AI Assistant** that makes my skills and projects instantly searchable — like an intelligent, interactive résumé.
 
-A floating, custom-built chat widget powered by the Google Gemini API, trained on:
-My resume data
-Project descriptions
-Technical focus areas
-It works as an interactive résumé inside the website.
+---
 
-✅ Modern Architecture
-Built as a high-performance Next.js Single Page Application (SPA) with optimized routing.
+## ✨ Key Features
 
-✅ Fully Responsive
-Designed to look clean and consistent across mobile, tablet, and desktop devices.
+### ✅ **Interactive AI Assistant (Core Feature)**
 
-✅ Smooth User Experience
-Uses Framer Motion for clean animations and transitions throughout the interface.
+A floating chat widget powered by the **Google Gemini API**, trained on:
 
-🚀 Tech Stack
+* My résumé
+* My project data
+* My technical focus areas
 
-| Category           | Technology      | Purpose                                       |
-| ------------------ | --------------- | --------------------------------------------- |
-| **Frontend**       | Next.js (React) | High-performance framework with SSR support   |
-| **Styling**        | Tailwind CSS    | Utility-first CSS for fast, responsive design |
-| **Animation**      | Framer Motion   | Smooth UI transitions & scroll effects        |
-| **AI Integration** | Gemini API      | Powers the custom AI Assistant                |
-| **Icons**          | Lucide React    | Lightweight icon set                          |
+It serves as an **on-site personal assistant** for recruiters and visitors.
 
-⚙️ Installation & Local Setup
+### ✅ **Modern Architecture**
 
-Follow these steps to run the project locally.
+Built as a fast **Next.js Single-Page Application (SPA)** for optimized routing and performance.
 
-1. Clone the Repository
+### ✅ **Fully Responsive**
+
+Works seamlessly across **mobile, tablet, and desktop** devices.
+
+### ✅ **Smooth UI & UX**
+
+Enhanced user experience using **Framer Motion** animations for transitions and section reveals.
+
+---
+
+## 🚀 Tech Stack
+
+| **Category**       | **Technology**      | **Purpose**                                  |
+| ------------------ | ------------------- | -------------------------------------------- |
+| Frontend Framework | **Next.js (React)** | High-performance SPA with SSR capabilities   |
+| Styling            | **Tailwind CSS**    | Utility-first, highly responsive styling     |
+| Animation          | **Framer Motion**   | Smooth transitions and page animations       |
+| AI Integration     | **Gemini API**      | Powers the custom context-aware AI Assistant |
+| Icons              | **Lucide React**    | Lightweight, customizable icon set           |
+
+---
+
+## ⚙️ Installation & Setup (Local Development)
+
+Follow the steps below to run this portfolio project on your system.
+
+---
+
+### **1. Clone the Repository**
+
+```bash
 git clone https://github.com/Priyadharshan-19/Portfolio.git
 cd Portfolio
+```
 
-1. Clone the Repository
-git clone https://github.com/Priyadharshan-19/Portfolio.git
-cd Portfolio
+---
 
-2. Install Dependencies
+### **2. Install Dependencies**
+
+```bash
 npm install
 # or
 yarn install
+```
 
-3. Set Up Gemini API Key (Required for Chatbot)
-Create .env.local inside the project root:
+---
+
+### **3. Set Up the Gemini API Key**
+
+*(Required for the AI Chatbot)*
+
+Create a file named **`.env.local`** in the project root and add:
+
+```bash
+# Recommended secure method
 NEXT_PUBLIC_GEMINI_API_KEY="YOUR_API_KEY_HERE"
+```
 
-4. Run the Development Server
+> Note:
+> The deployed version currently uses a hardcoded key for demo purposes.
+> If switching to environment variables, update the `API_KEY` definition inside:
+> `app/components/FloatingAIWidget.tsx`
+
+---
+
+### **4. Run the Development Server**
+
+```bash
 npm run dev
 # or
 yarn dev
+```
 
-Your app will run at:
-👉 http://localhost:3000
+Your application will now be available at:
+👉 **[http://localhost:3000](http://localhost:3000)**
 
-🌐 Deployment
-The project is optimized for Vercel deployment, thanks to seamless Next.js support.
+---
 
-⭐ Live Site
-https://priyadharshan-19.vercel.app/
+## 🌐 Deployment
 
-Before deploying, ensure you add your Gemini API key in:
-Vercel Dashboard → Project Settings → Environment Variables
+This portfolio is optimized for easy deployment on **Vercel** (recommended) due to its seamless support for Next.js.
 
-🤝 Developed By
-Priyadharshan M
+### ⭐ **LIVE SITE:**
 
-“Engineering intelligent solutions for real-world impact.”
-📧 Email: priyadharshan802@gmail.com
+### 👉 [https://priyadharshan-19.vercel.app/](https://priyadharshan-19.vercel.app/)
 
+For secure deployment:
+
+* Add your **Gemini API key** in Vercel → Project Settings → Environment Variables.
+
+---
+
+## 🤝 Developed By
+
+**Priyadharshan M**
+✨ *"Engineering intelligent solutions for real-world impact."*
+📧 **Reach Me:** [priyadharshan802@gmail.com](mailto:priyadharshan802@gmail.com)
 
