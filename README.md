@@ -30,13 +30,14 @@ Beautifully optimized for mobile, tablet, and desktop screens.
 Uses Framer Motion for clean animations and transitions.
 
 🚀 Tech Stack
-Category	Technology	Purpose
-Frontend	Next.js (React)	High-performance SPA + SSR
-Styling	Tailwind CSS	Utility-first, responsive design
-Animation	Framer Motion	Smooth UI transitions
-AI Integration	Gemini API	Powers the custom AI Assistant
-Icons	Lucide React	Lightweight icon set
-⚙️ Installation & Local Setup
+| Category           | Technology      | Purpose                          |
+| ------------------ | --------------- | -------------------------------- |
+| **Frontend**       | Next.js (React) | High-performance SPA + SSR       |
+| **Styling**        | Tailwind CSS    | Utility-first, responsive design |
+| **Animation**      | Framer Motion   | Smooth UI transitions            |
+| **AI Integration** | Gemini API      | Powers the custom AI Assistant   |
+| **Icons**          | Lucide React    | Lightweight icon set             |
+
 
 Follow these steps to run the project locally.
 
